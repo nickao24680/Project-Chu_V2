@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>Nguyễn Văn Đức (ADMIN)</title>
+    <style>
+        *{
+    /* Initialize and cancel the inner and outer margins of page elements */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* 100% Window Height */
+    height: 100vh;
+    /* Flexible layout horizontal and vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+span{
+    font-size: 100px;
+    font-weight: bold;
+    color: #111;
+    /* capital */
+    text-transform: uppercase;
+    /* Word spacing */
+    letter-spacing: 5px;
+    /* Blur filter */
+    filter: blur(2px);
+    /* Execute animation: Animation name Duration Linear Infinite playback */
+    animation: animate 2.5s linear infinite;
+}
+/* Next, for each span Element animation delay time */
+span:nth-child(1){
+    animation-delay: 0s;
+}
+span:nth-child(2){
+    animation-delay: 0.25s;
+}
+span:nth-child(3){
+    animation-delay: 0.5s;
+}
+span:nth-child(4){
+    animation-delay: 0.75s;
+}
+span:nth-child(5){
+    animation-delay: 1s;
+}
+span:nth-child(6){
+    animation-delay: 1.25s;
+}
+span:nth-child(7){
+    animation-delay: 1.5s;
+}
+span:nth-child(8){
+    animation-delay: 1.75s;
+}
+span:nth-child(9){
+    animation-delay: 2s;
+}
+span:nth-child(10){
+    animation-delay: 2.25s;
+}
+
+/* Defining Animation */
+@keyframes animate {
+    0%,100%{
+        color: rgb(255, 255, 255);
+        /* Blur filter */
+        filter: blur(2px);
+        /* Text Shadow */
+        text-shadow: 
+        0 0 10px #ff5e00,
+        0 0 20px #d1ff02,
+        0 0 30px #32ff7e,
+        0 0 40px #00a2ff,
+        0 0 100px #5900ff,
+        0 0 200px #32ff7e,
+        0 0 300px #ff009d,
+        0 0 400px #32ff7e
+        ;
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span>N</span>
+        <span>V</span>
+        <span>Đ</span>
+        <span>(</span>
+        <span>A</span>
+        <span>D</span>
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>)</span>
+    </div>
+</body>
+
+</html>
